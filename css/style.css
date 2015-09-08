@@ -1,0 +1,633 @@
+/*!
+ * Mason Template 
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+/* Fonts
+---------------------------------*/
+@font-face {
+  font-family: 'Futura';
+  src:  url('../fonts/Futura.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Medium';
+  src:  url('../fonts/FuturaLT.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Bold';
+  src:  url('../fonts/future-bold/FuturaLT-Bold_gdi.woff') format('woff');
+}
+
+/* Reset
+---------------------------------*/
+ul {
+    list-style: none;
+}
+
+.figure {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a, a:hover, a:active {
+    outline: 0px !important;
+}
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Styles
+---------------------------------*/
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Futura",sans-serif;
+    color: #010101;
+}
+
+p{
+    font-family: "Futura",sans-serif;
+    font-size: 19px;
+    color: #010101;
+}
+
+
+@media(min-width: 992px){
+    .rsp-break{
+        display: none;
+    }
+}
+
+@media(max-width: 992px){
+    .container{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+}
+
+/* Header Styles
+---------------------------------*/
+
+.topnav {
+    font-family: "Futura Bold", sans-serif;
+    font-size: 18px; 
+    height: auto;
+}
+
+.navbar-brand{
+    padding: 20px;
+}
+
+.logo{
+    height: 34px;
+    width: 93px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.nav{
+    padding-top: 12px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #666666;
+}
+
+
+@media(max-width: 768px){
+    .navbar-header{
+        float: left;
+    }
+    
+    .nav{
+        float: right;
+    }
+    .nav>li{
+        display: inline-block;
+    }
+} 
+
+
+.intro-header {
+    margin-top: 75px; 
+    padding-bottom: 50px;
+    color: #fff;
+    background: url(../img/healthcare_hero.png) no-repeat center center;
+    background-color: #e1e1e1 !important;
+    background-size: 100% 100%;
+}
+
+@media(min-width: 1350px){
+    .intro-header{
+        background-size: cover !important;
+    }
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    font-family: "Futura Bold", sans-serif;
+    margin: 0;
+    text-shadow: -1px 2px 9px rgba(0,0,0,0.35);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.intro-message > h3 {
+    text-shadow: -1px 2px 9px rgba(0,0,0,0.35);
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.intro-message > .btn-lg{
+    padding-left: 75px;
+    padding-right: 75px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+.intro-message > .btn-lg:hover{
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:992px) {
+    .intro-header{
+        background: none !important;;
+    }
+    
+    .intro-message {
+        padding-bottom: 0px;
+        padding-top: 50px;
+        text-align: center;
+        color: black;
+    }
+    
+    .intro-message > h1, .intro-message h3 {
+        text-shadow: none;
+        color: black;
+    }
+    
+    .intro-message > .btn-lg{
+        border: 2px solid black;
+    }
+
+}
+
+/* Carousel
+---------------------------------*/
+#carousel-container{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-inner {
+   margin-bottom: 35px;
+}
+
+.carousel-indicators li{
+    background-color: #7d7d7d;
+    height: 12px;
+    width: 12px;
+}
+
+.carousel-indicators .active{
+    background-color: #010101;
+}
+
+#carousel-container h1{
+    font-family: "Futura Bold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    font-size: 30px;
+}
+
+#carousel-container h2{
+    font-family: "Futura Bold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators .active{
+    margin: 1px;
+}
+
+.mobile-carousel h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 992px){
+    #carousel-container{
+        padding-top: 50px;
+    }
+    
+    #carousel-container h2{
+        font-family: "Futura Bold", sans-serif;
+        margin-top: 30px;
+    }
+    
+    #carousel-container p{
+        margin-bottom: 75px;
+    }
+    
+    #carousel-container p:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width: 768px){
+    #carousel-container{
+        background-color: #fafdfe;
+    }
+}
+
+/* Get Started
+---------------------------------*/
+
+.get-started{
+    background-color: #e1e1e1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.get-started .btn-lg{
+    padding: 5px 50px;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 0px;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.get-started .btn-lg:hover{
+    background-color: white;   
+}
+
+@media(max-width: 992px){
+    .get-started .btn-lg{
+        background: #fff;
+    }
+}
+
+@media(max-width: 768px){
+    .get-started{
+        background-color: #fff;
+    }
+}
+
+/* Steps
+---------------------------------*/
+#steps{
+    padding: 50px 0px;
+}
+
+#steps h2{
+    font-family: "Futura Bold", sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    
+}
+
+#steps h3{
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+#step1, #step2{
+    padding-bottom: 150px;
+}
+
+#step2 .col-md-8{
+    padding-left: 45px;
+}
+
+#steps h4{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 992px){
+    #steps{
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    #steps h2{
+        padding-bottom: 10px;
+    }
+    
+    #step1{
+        background-color: #faf8ef;
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+    
+    #step2{
+        background: #fbf7f5;
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+    
+    #step3{
+        background: #f0f2f7;
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+    
+    #step2 .col-md-8{
+    padding-left: 15px;
+    }
+}
+
+/* Categories
+---------------------------------*/
+
+#categories{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#categories h2{
+    font-family: "Futura Bold", sans-serif;
+    text-transform: uppercase;
+    
+}
+
+#categories p{
+    padding-bottom: 20px;
+}
+
+.cat-header{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cat1, .cat2{
+    padding: 15px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cat1{
+    border-bottom: 0px;
+}
+
+.cat-btn:hover .cat1, .cat-btn:hover .cat2{
+    border-color: white;
+    background-color: black;
+    color: white;
+} 
+
+a.cat-btn {
+    text-decoration: none;
+    color: #010101;
+}
+
+
+@media(max-width: 992px){
+    #categories{
+        padding: 100px 125px 100px 125px;
+    }
+    
+    .cat{
+        margin-bottom: 50px;
+    }
+    
+    .cat2{
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 768px){
+    #categories{
+        background-color: #f6f6f6;
+        padding: 100px 50px 100px 50px;
+    }  
+}
+
+/* Contact
+---------------------------------*/
+
+#contact{
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+#contact-form{
+    /* border: 2px solid #ebedee; */
+    padding: 40px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control{
+    border: 1px solid #ebedee;
+    font-size: 17px;
+}
+
+#form-submit{
+    background: url('../img/form_btn.png') no-repeat;
+    background-size: 157px 45px;
+    border: none;
+    height: 45px;
+    width: 157px;
+    margin-top: 20px;
+}
+
+input[type=submit]:focus {
+  background-color: transparent;
+  outline: 0 !important;
+  border: none !important;
+} 
+
+input[type="text"], input[type="email"], textarea {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #ebedee !important;
+    color: black;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px; 
+    margin-bottom: 30px;
+    padding: 0 15px; 
+}
+
+#contact h3{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contact p{
+    font-size: 16px;
+}
+
+.map-container{
+    padding-left: 100px;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-radius: 5;
+}
+
+.phone{
+    background: url('../img/phone_icon.png') no-repeat 0px 0px;
+    background-size: 24px 21px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.email{
+    background: url('../img/mail_icon.png') no-repeat 0px 0px;
+    background-size: 24px 20px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.footer-logo{
+    margin-top: 50px;
+}
+
+@media(max-width: 992px){
+    #contact{
+        background-color: #f0f0f0;
+    }
+    
+    .map-container{
+    padding-left: 15px;
+    }
+    
+    #contact-form{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    input[type="text"], input[type="email"], textarea {
+        background-color: transparent !important;
+        border: 2px solid #9c9c9c !important;
+        border-radius: 8px;
+    }
+}
+
+@media(max-width: 768px){
+    #contact{
+        background-color: #fff;
+    } 
+    
+    #contact-form{
+        padding: 20px;
+        border-radius: 8px;
+    }
+     input[type="text"], input[type="email"], textarea {
+        border: 2px solid #ebedee !important;
+        border-radius: 8px;
+    }
+    
+    .cf-container{
+        margin-bottom: 30px;
+    }
+}
+
+/* Partners
+---------------------------------*/
+#partners{
+    background-color: #e1e1e1;
+    padding: 50px 0px;
+}
+
+#partners h2{
+    font-family: "Futura Bold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+ul.sponsors li{
+    display: inline;
+    color: #010101;
+    font-size: 27px;
+}
+
+ul.sponsors li a{
+    color: #010101;
+    font-size: 27px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
