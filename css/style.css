@@ -77,13 +77,28 @@ h4,
 h5,
 h6 {
     font-family: "Futura",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    font-weight: normal;
     color: #010101;
 }
 
 p{
     font-family: "Futura",sans-serif;
     font-size: 19px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    font-weight: normal;
     color: #010101;
+}
+
+body{
+    background-color: #eaeaea;
+    padding-top: 70px;
+}
+
+section{
+    background-color: #fff;
 }
 
 
@@ -93,12 +108,53 @@ p{
     }
 }
 
-@media(max-width: 992px){
+@media (max-width: 992px){
+    .container{
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    
+    P{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    #contact P{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .phone, .email{
+        padding-left: 40px !important;
+    }
+
+    
+    #partners{
+      padding-left: 100px !important;
+      padding-right: 100px !important;
+    }
+
+}
+
+@media (max-width: 767px){
     .container{
       padding-left: 30px;
       padding-right: 30px;
     }
+    
+    #partners{
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+    
+     P{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
 }
+
 
 /* Header Styles
 ---------------------------------*/
@@ -156,16 +212,29 @@ p{
     background-size: 100% 100%;
 }
 
+/*
 @media(min-width: 1350px){
     .intro-header{
         background-size: cover !important;
     }
 }
+*/
 
 .intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media(max-width: 992px){
+    .intro-message {
+        position: relative;
+        transform: none;
+    }
+    
+    .intro-message > h3, .mobile-carousel h4 {
+        font-weight: normal !important;
+    }
 }
 
 .intro-message > h1 {
@@ -201,6 +270,11 @@ p{
     color: white;
 }
 
+#home_slider.container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 @media(max-width:992px) {
     .intro-header{
         background: none !important;;
@@ -212,6 +286,7 @@ p{
         text-align: center;
         color: black;
     }
+    
     
     .intro-message > h1, .intro-message h3 {
         text-shadow: none;
@@ -227,15 +302,14 @@ p{
 /* Carousel
 ---------------------------------*/
 #carousel-container{
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding: 75px;
 }
 
 .carousel-indicators {
   bottom: -50px;
 }
 
-.carousel-inner {
+#carousel-container .carousel-inner {
    margin-bottom: 35px;
 }
 
@@ -257,6 +331,11 @@ p{
 }
 
 #carousel-container h2{
+    text-transform: none;
+    font-size: 24px;
+}
+
+#carousel-container h3{
     font-family: "Futura Bold", sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -304,6 +383,7 @@ p{
     background-color: #e1e1e1;
     padding-top: 50px;
     padding-bottom: 50px;
+    cursor: pointer;
     
 }
 
@@ -320,22 +400,24 @@ p{
     background-color: white;   
 }
 
-@media(max-width: 992px){
-    .get-started .btn-lg{
-        background: #fff;
-    }
-}
+
 
 @media(max-width: 768px){
     .get-started{
         background-color: #fff;
     }
+    
+    .get-started .btn-lg:hover, .get-started .btn-lg:focus{
+        background: #000;
+        color: #fff;
+    }
+
 }
 
 /* Steps
 ---------------------------------*/
-#steps{
-    padding: 50px 0px;
+#step1, #step2, #step3{
+    padding: 50px 75px;
 }
 
 #steps h2{
@@ -369,8 +451,7 @@ p{
 @media(max-width: 992px){
     #steps{
         text-align: center;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding: 0px;
     }
     
     #steps h2{
@@ -404,8 +485,7 @@ p{
 ---------------------------------*/
 
 #categories{
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding: 50px 75px 100px 75px;
 }
 
 #categories h2{
@@ -461,7 +541,7 @@ a.cat-btn {
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
     #categories{
         background-color: #f6f6f6;
         padding: 100px 50px 100px 50px;
@@ -474,6 +554,7 @@ a.cat-btn {
 #contact{
     padding-bottom: 150px;
     padding-top: 100px;
+    padding: 100px 75px 150px 75px;
 }
 
 #contact-form{
@@ -500,6 +581,7 @@ label{
     height: 45px;
     width: 157px;
     margin-top: 20px;
+    outline: none;
 }
 
 input[type=submit]:focus {
@@ -592,7 +674,7 @@ input[type="text"], input[type="email"], textarea {
     } 
     
     #contact-form{
-        padding: 20px;
+        padding: 0px;
         border-radius: 8px;
     }
      input[type="text"], input[type="email"], textarea {
@@ -616,6 +698,10 @@ input[type="text"], input[type="email"], textarea {
     font-family: "Futura Bold", sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+ul.sponsors{
+    padding-left: 0px;
 }
 
 ul.sponsors li{

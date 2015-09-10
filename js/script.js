@@ -29,3 +29,8 @@ if ($(window).width() >= 992){
     
  
  });
+
+$(".get-started").click(function() {
+  window.open('http://builder.bymason.com');
+  return false;
+});
