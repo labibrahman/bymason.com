@@ -25,37 +25,46 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
 
-    <!--- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function init_map() {
+        <!--- Google Maps -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function init_map() {
 
-        var var_location = new google.maps.LatLng(42.3355256, -83.0493539);
+                var var_location = new google.maps.LatLng(42.3355256, -83.0493539);
 
-        var var_mapoptions = {
-          center: var_location,
-          zoom: 14,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          mapTypeControl: false,
-          panControl:false,
-          rotateControl:false,
-          streetViewControl: false,
-          scrollwheel: true,
-        };
+                var var_mapoptions = {
+                  center: var_location,
+                  zoom: 14,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  mapTypeControl: false,
+                  panControl:false,
+                  rotateControl:false,
+                  streetViewControl: false,
+                  scrollwheel: true,
+              };
 
-        var var_map = new google.maps.Map(document.getElementById("map-canvas"),
-            var_mapoptions);
+              var var_map = new google.maps.Map(document.getElementById("map-canvas"),
+                var_mapoptions);
 
-      }
+          }
 
-      google.maps.event.addDomListener(window, 'load', init_map);
-    </script>
+          google.maps.event.addDomListener(window, 'load', init_map);
+      </script>
 
-</head>
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<body>
+          ga('create', 'UA-67743324-1', 'auto');
+          ga('send', 'pageview');
+      </script>
+  </head>
+
+  <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav">
@@ -66,17 +75,17 @@
             </div>
             <!-- Navigation Links -->
             <ul class="nav navbar-nav navbar-right">
-                 <li>
-                     <a href="http://builder.bymason.com/" target="_blank">Get Started</a>
-                 </li>
-                 <li>
-                    <a class="hidden-xs" href="#contact">Contact Us</a>
-                 </li>
-            </ul>
-            <!-- /.navigation links -->
-        </div>
-        <!-- /.container -->
-    </nav>
+               <li>
+                   <a href="http://builder.bymason.com/" target="_blank">Get Started</a>
+               </li>
+               <li>
+                <a class="hidden-xs" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+        <!-- /.navigation links -->
+    </div>
+    <!-- /.container -->
+</nav>
 
     <!-- Header
 
@@ -103,164 +112,164 @@
 
 
     <section id="home_slider" class="container hidden-sm hidden-xs">
-    <div id="slider-carousel" class="carousel slide hidden-xs hidden-sm" data-ride="carousel" data-interval="5000" data-pause="false">
+        <div id="slider-carousel" class="carousel slide hidden-xs hidden-sm" data-ride="carousel" data-interval="5000" data-pause="false">
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
                 <img src="img/healthcare_hero.png" alt="Healthcare" />
                 <div class="intro-message col-md-offset-1">
-                        <h1>Easily Deploy <br class="hidden-sm hidden-xs"/> Your Industry App <br class="hidden-sm hidden-xs"/> With Mason</h1>
-                        <h3>Stop worrying about device compatibility<br class="hidden-sm hidden-xs"/> and network support. Build your device<br class="hidden-sm hidden-xs"/> network with Mason.</h3>
-                        <a href="http://builder.bymason.com/" target="_blank" class="intro-btn btn btn-default btn-lg">Get Started</a>
+                    <h1>Easily Deploy <br class="hidden-sm hidden-xs"/> Your Industry App <br class="hidden-sm hidden-xs"/> With Mason</h1>
+                    <h3>Stop worrying about device compatibility<br class="hidden-sm hidden-xs"/> and network support. Build your device<br class="hidden-sm hidden-xs"/> network with Mason.</h3>
+                    <a href="http://builder.bymason.com/" target="_blank" class="intro-btn btn btn-default btn-lg">Get Started</a>
                 </div>
             </div>
 
             <div class="item">
                 <img src="img/transportation_hero.png" alt="Transportation" />
-                 <div class="intro-message col-md-offset-1">
-                        <h1>Easily Deploy <br class="hidden-sm hidden-xs"/> Your Industry App <br class="hidden-sm hidden-xs"/> With Mason</h1>
-                        <h3>Stop worrying about device compatibility<br class="hidden-sm hidden-xs"/> and network support. Build your device<br class="hidden-sm hidden-xs"/> network with Mason.</h3>
-                        <a href="http://builder.bymason.com/" target="_blank" class="intro-btn btn btn-default btn-lg">Get Started</a>
-                </div>
-            </div>
-
-           <div class="item">
-               <img src="img/POS_hero.png" alt="Point-of-Sale" />
                 <div class="intro-message col-md-offset-1">
-                        <h1>Easily Deploy <br class="hidden-sm hidden-xs"/> Your Industry App <br class="hidden-sm hidden-xs"/> With Mason</h1>
-                        <h3>Stop worrying about device compatibility<br class="hidden-sm hidden-xs"/> and network support. Build your device<br class="hidden-sm hidden-xs"/> network with Mason.</h3>
-                        <a href="http://builder.bymason.com/" target="_blank" class="intro-btn btn btn-default btn-lg">Get Started</a>
+                    <h1>Easily Deploy <br class="hidden-sm hidden-xs"/> Your Industry App <br class="hidden-sm hidden-xs"/> With Mason</h1>
+                    <h3>Stop worrying about device compatibility<br class="hidden-sm hidden-xs"/> and network support. Build your device<br class="hidden-sm hidden-xs"/> network with Mason.</h3>
+                    <a href="http://builder.bymason.com/" target="_blank" class="intro-btn btn btn-default btn-lg">Get Started</a>
                 </div>
-              </div>
-
-          </div>
-    </div> <!-- Carousel -->
-    </section>
-
-    <!-- Page Content -->
-    <section id="carousel-container" class="container">
-        <!-- Desktop Carousel -->
-       <div id="carousel" class="carousel slide hidden-xs hidden-sm" data-ride="carousel" data-interval="5000">
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner row">
-           <div class="item active">
-              <div class="col-md-6">
-               <img class="hidden-xs" src="img/healthcare_illustration.png" alt="Healthcare">
-               <img class="hidden-sm hidden-md hidden-lg" src="img/healthcare_ill_mobile.png" alt="Healthcare">
-              </div>
-              <div class="col-md-6">
-                <h2>Our customers use Mason for...</h2>
-                <h3>Healthcare</h3>
-                <p>Mason guarantees service and availability of a custom 3G device for capturing patient data that works worldwide.</p>
-              </div>
             </div>
 
             <div class="item">
-              <div class="col-md-6">
-               <img src="img/transportation_illustration.png" alt="Transportation">
-               <img class="hidden-sm hidden-md hidden-lg" src="img/transportation_ill_mobile.png" alt="Transportation">
-              </div>
-              <div class="col-md-6">
-                <h2>Our customers use Mason for...</h2>
-                <h3>Transportation</h3>
-                <p>Mason develops a low-cost LTE tablet paired with RFID enabled accessories for federal e-logging compliance.</p>
-              </div>
+             <img src="img/POS_hero.png" alt="Point-of-Sale" />
+             <div class="intro-message col-md-offset-1">
+                <h1>Easily Deploy <br class="hidden-sm hidden-xs"/> Your Industry App <br class="hidden-sm hidden-xs"/> With Mason</h1>
+                <h3>Stop worrying about device compatibility<br class="hidden-sm hidden-xs"/> and network support. Build your device<br class="hidden-sm hidden-xs"/> network with Mason.</h3>
+                <a href="http://builder.bymason.com/" target="_blank" class="intro-btn btn btn-default btn-lg">Get Started</a>
             </div>
-
-           <div class="item">
-              <div class="col-md-6">
-               <img class="hidden-xs" src="img/pos_illustration.png" alt="Point-of-Sale">
-               <img class="hidden-sm hidden-md hidden-lg" src="img/POS_ill_mobile.png" alt="Point-of-Sale">
-              </div>
-              <div class="col-md-6">
-                  <h2>Our customers use Mason for...</h2>
-                  <h3>Point-of-Sale</h3>
-                  <p>Mason enables a point-of-sale software company to launch a new mobile solution for its retail chain customers: integrated card swiper and smartphone. The new device supports NFC payments and new EMV "chip and PIN" credit cards.</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-          </ol>
-    </div> <!-- Carousel -->
-
-        <!-- Mobile Carousel -->
-        <div class="mobile-carousel hidden-md hidden-lg text-center">
-            <h4>Scroll Through Some<br/> Customer Examples...</h4>
-
-            <img class="hidden-xs" src="img/healthcare_illustration.png" alt="Healthcare" />
-            <img class="hidden-sm" src="img/healthcare_ill_mobile.png" alt="Healthcare" />
-            <h2>Healthcare</h2>
-            <p>Mason guarantees service and availability of a custom 3G device for capturing patient data that works worldwide.</p>
-
-            <img class="hidden-xs" src="img/transportation_illustration.png" alt="Transportation" />
-            <img class="hidden-sm" src="img/transportation_ill_mobile.png" alt="Transportation" />
-            <h2>Transportation</h2>
-            <p>Mason develops a low-cost LTE tablet paired with RFID enabled accessories for federal e-logging compliance.</p>
-
-            <img class="hidden-xs" src="img/pos_illustration.png" alt="Point of Sale" />
-            <img class="hidden-sm hidden-md hidden-lg" src="img/POS_ill_mobile.png" alt="Transportation">
-
-            <h2>Point-Of-Sale</h2>
-            <p>Mason enables a point-of-sale software company to launch a new mobile solution for its retail chain customers: integrated card swiper and smartphone. The new device supports NFC payments and new EMV "chip and PIN" credit cards.</p>
-
         </div>
-    </section>
-    <!-- /.carousel section -->
 
-    <!-- Get Started -->
-    <div class="get-started container text-center">
-        <a href="http://builder.bymason.com/" target="_blank" class="btn btn-default btn-lg">Get Started</a>
     </div>
-    <!-- /.get started section -->
+</div> <!-- Carousel -->
+</section>
 
-    <!-- Steps -->
-    <section id="steps" class="container">
-        <!-- Step 1 -->
-        <section id="step1">
+<!-- Page Content -->
+<section id="carousel-container" class="container">
+    <!-- Desktop Carousel -->
+    <div id="carousel" class="carousel slide hidden-xs hidden-sm" data-ride="carousel" data-interval="5000">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner row">
+         <div class="item active">
+          <div class="col-md-6">
+             <img class="hidden-xs" src="img/healthcare_illustration.png" alt="Healthcare">
+             <img class="hidden-sm hidden-md hidden-lg" src="img/healthcare_ill_mobile.png" alt="Healthcare">
+         </div>
+         <div class="col-md-6">
+            <h2>Our customers use Mason for...</h2>
+            <h3>Healthcare</h3>
+            <p>Mason guarantees service and availability of a custom 3G device for capturing patient data that works worldwide.</p>
+        </div>
+    </div>
+
+    <div class="item">
+      <div class="col-md-6">
+         <img src="img/transportation_illustration.png" alt="Transportation">
+         <img class="hidden-sm hidden-md hidden-lg" src="img/transportation_ill_mobile.png" alt="Transportation">
+     </div>
+     <div class="col-md-6">
+        <h2>Our customers use Mason for...</h2>
+        <h3>Transportation</h3>
+        <p>Mason develops a low-cost LTE tablet paired with RFID enabled accessories for federal e-logging compliance.</p>
+    </div>
+</div>
+
+<div class="item">
+  <div class="col-md-6">
+     <img class="hidden-xs" src="img/pos_illustration.png" alt="Point-of-Sale">
+     <img class="hidden-sm hidden-md hidden-lg" src="img/POS_ill_mobile.png" alt="Point-of-Sale">
+ </div>
+ <div class="col-md-6">
+  <h2>Our customers use Mason for...</h2>
+  <h3>Point-of-Sale</h3>
+  <p>Mason enables a point-of-sale software company to launch a new mobile solution for its retail chain customers: integrated card swiper and smartphone. The new device supports NFC payments and new EMV "chip and PIN" credit cards.</p>
+</div>
+</div>
+
+</div>
+
+<!-- Indicators -->
+<ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+</ol>
+</div> <!-- Carousel -->
+
+<!-- Mobile Carousel -->
+<div class="mobile-carousel hidden-md hidden-lg text-center">
+    <h4>Scroll Through Some<br/> Customer Examples...</h4>
+
+    <img class="hidden-xs" src="img/healthcare_illustration.png" alt="Healthcare" />
+    <img class="hidden-sm" src="img/healthcare_ill_mobile.png" alt="Healthcare" />
+    <h2>Healthcare</h2>
+    <p>Mason guarantees service and availability of a custom 3G device for capturing patient data that works worldwide.</p>
+
+    <img class="hidden-xs" src="img/transportation_illustration.png" alt="Transportation" />
+    <img class="hidden-sm" src="img/transportation_ill_mobile.png" alt="Transportation" />
+    <h2>Transportation</h2>
+    <p>Mason develops a low-cost LTE tablet paired with RFID enabled accessories for federal e-logging compliance.</p>
+
+    <img class="hidden-xs" src="img/pos_illustration.png" alt="Point of Sale" />
+    <img class="hidden-sm hidden-md hidden-lg" src="img/POS_ill_mobile.png" alt="Transportation">
+
+    <h2>Point-Of-Sale</h2>
+    <p>Mason enables a point-of-sale software company to launch a new mobile solution for its retail chain customers: integrated card swiper and smartphone. The new device supports NFC payments and new EMV "chip and PIN" credit cards.</p>
+
+</div>
+</section>
+<!-- /.carousel section -->
+
+<!-- Get Started -->
+<div class="get-started container text-center">
+    <a href="http://builder.bymason.com/" target="_blank" class="btn btn-default btn-lg">Get Started</a>
+</div>
+<!-- /.get started section -->
+
+<!-- Steps -->
+<section id="steps" class="container">
+    <!-- Step 1 -->
+    <section id="step1">
+        <div class="hidden-md hidden-lg">
+            <h4>Learn more about how we<br/> make it all happen...</h4>
+        </div>
+
+        <div class="row">
             <div class="hidden-md hidden-lg">
-                <h4>Learn more about how we<br/> make it all happen...</h4>
+
+                <h2>1<br/>Understand Your Needs</h2>
+                <p>We start by using a form to find your ideal device.</p>
+            </div>
+            <div class="col-md-4 col-md-push-8">
+                <img alt="Step 1" class="hidden-sm hidden-xs" src="img/step_one_illustration.png" />
+                <img alt="Step 1" class="hidden-md hidden-lg" src="img/step_one_ill_tablet.png" />
             </div>
 
-            <div class="row">
-                <div class="hidden-md hidden-lg">
-
-                    <h2>1<br/>Understand Your Needs</h2>
+            <div class="col-md-8 col-md-pull-4">
+                <div class="hidden-sm hidden-xs">
+                    <h2>1. Understand Your Needs</h2>
                     <p>We start by using a form to find your ideal device.</p>
                 </div>
-                <div class="col-md-4 col-md-push-8">
-                    <img alt="Step 1" class="hidden-sm hidden-xs" src="img/step_one_illustration.png" />
-                    <img alt="Step 1" class="hidden-md hidden-lg" src="img/step_one_ill_tablet.png" />
-                </div>
-
-                <div class="col-md-8 col-md-pull-4">
-                    <div class="hidden-sm hidden-xs">
-                        <h2>1. Understand Your Needs</h2>
-                        <p>We start by using a form to find your ideal device.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Quick & Easy</h3>
+                        <p>We're all busy people, so we won't waste your time asking unnecessary questions. We'll keep it simple and to the point. Hint: It might be helpful if you have an IT person on hand to help answer.</p>
                     </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3>Quick & Easy</h3>
-                                <p>We're all busy people, so we won't waste your time asking unnecessary questions. We'll keep it simple and to the point. Hint: It might be helpful if you have an IT person on hand to help answer.</p>
-                            </div>
-                            <div class="col-md-6`">
-                                <h3>Get the Ball Rolling</h3>
-                                <p>Once you complete the form and we've ID'd the right device, we'll send you a real life prototype. See how it works for you - your feedback helps us fine-tune it.</p>
-                            </div>
-                        </div><!-- ./inner row -->
+                    <div class="col-md-6`">
+                        <h3>Get the Ball Rolling</h3>
+                        <p>Once you complete the form and we've ID'd the right device, we'll send you a real life prototype. See how it works for you - your feedback helps us fine-tune it.</p>
                     </div>
-
+                </div><!-- ./inner row -->
             </div>
-            <!-- /.step 1 -->
-        </section>
 
-        <!-- Step 2 -->
-        <section id="step2">
+        </div>
+        <!-- /.step 1 -->
+    </section>
+
+    <!-- Step 2 -->
+    <section id="step2">
         <div class="row">
             <div class="hidden-md hidden-lg">
                 <h2>2<br/>Customizing The Firmware</h2>
@@ -288,27 +297,27 @@
                 </div><!-- ./inner row -->
             </div>
         </div>
-        </section><!-- /.step 2 -->
+    </section><!-- /.step 2 -->
 
-        <!-- Step 3 -->
-        <section id="step3">
-            <div class="row">
-                <div class="hidden-md hidden-lg">
-                    <h2>3<br/>Deploy Effortlessly</h2>
-                    <p>We launch your network of mobile devices witrh most carriers as well as WiFi-only.</p>
-                </div>
+    <!-- Step 3 -->
+    <section id="step3">
+        <div class="row">
+            <div class="hidden-md hidden-lg">
+                <h2>3<br/>Deploy Effortlessly</h2>
+                <p>We launch your network of mobile devices witrh most carriers as well as WiFi-only.</p>
+            </div>
 
-                <div class="col-md-4 col-md-push-8">
-                    <img alt="Step 3" class="hidden-xs hidden-sm" src="img/step_three_illustration.png" />
-                    <img alt="Step 3" class="hidden-md hidden-lg" src="img/step_three_ill_tablet.png" />
-                </div>
+            <div class="col-md-4 col-md-push-8">
+                <img alt="Step 3" class="hidden-xs hidden-sm" src="img/step_three_illustration.png" />
+                <img alt="Step 3" class="hidden-md hidden-lg" src="img/step_three_ill_tablet.png" />
+            </div>
 
-                 <div class="col-md-8 col-md-pull-4">
-                    <div class="hidden-xs hidden-sm">
-                        <h2>3. Deploy Effortlessly</h2>
-                        <p>We can launch your network of mobile devices with most carriers as well as WiFi-only. With Mason as your platform, you can easily dial up or down the services that give 100% uptime to your application. Services include firmware support & updates, device warranty, network life-cycle management,
-        & data connectivity.</p>
-                     </div>
+            <div class="col-md-8 col-md-pull-4">
+                <div class="hidden-xs hidden-sm">
+                    <h2>3. Deploy Effortlessly</h2>
+                    <p>We can launch your network of mobile devices with most carriers as well as WiFi-only. With Mason as your platform, you can easily dial up or down the services that give 100% uptime to your application. Services include firmware support & updates, device warranty, network life-cycle management,
+                        & data connectivity.</p>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <h3>Integrations</h3>
@@ -322,8 +331,8 @@
                 </div>
 
             </div>
-        <!-- /.step 3 -->
-    </section>
+            <!-- /.step 3 -->
+        </section>
     </section><!-- /.steps section -->
 
     <!-- Get Started -->
@@ -373,40 +382,40 @@
 
     <!-- Contact -->
     <section id ="contact" class="container">
-            <div class="col-md-6 cf-container">
-                <form action ="http://formspree.io/contact@bymason.com" method="POST" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
-                     </div>
-                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea rows="5" cols="100" class="form-control" id="message" name="message" placeholder="Message" required></textarea>
-                     </div>
-                      <button type="submit" id="form-submit" class="btn btn-primary btn-lg"></button>
-                      <input type="hidden" name="_next" value="http://bymason.com/message-sent.html" />
-                    </form>
-            </div>
-            <div class="col-md-6 map-container">
-                <h3>Where to find us</h3>
-                <p>Mason headquarters is located in the heart of downtown Detroit, come stop by and join us in the hoopla!</p>
+        <div class="col-md-6 cf-container">
+            <form action ="http://formspree.io/contact@bymason.com" method="POST" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea rows="5" cols="100" class="form-control" id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" id="form-submit" class="btn btn-primary btn-lg"></button>
+                <input type="hidden" name="_next" value="http://bymason.com/message-sent.html" />
+            </form>
+        </div>
+        <div class="col-md-6 map-container">
+            <h3>Where to find us</h3>
+            <p>Mason headquarters is located in the heart of downtown Detroit, come stop by and join us in the hoopla!</p>
 
-                <!-- Map Here -->
-                <div id="map-canvas"></div>
+            <!-- Map Here -->
+            <div id="map-canvas"></div>
 
-                <h3>Get in touch</h3>
-                 <p>Want a more direct line? We look forward to hearing from you!</p>
+            <h3>Get in touch</h3>
+            <p>Want a more direct line? We look forward to hearing from you!</p>
 
-                <p class="phone">+1 313 725 0683</p>
-                <p class="email">contact@bymason.com</p>
-            </div>
-            <div class="footer-logo text-center hidden-sm hidden-md hidden-lg">
-                <a href="#"><img class="logo" src="img/logo.png" alt="Mason" /></a>
-            </div>
+            <p class="phone">+1 313 725 0683</p>
+            <p class="email">contact@bymason.com</p>
+        </div>
+        <div class="footer-logo text-center hidden-sm hidden-md hidden-lg">
+            <a href="#"><img class="logo" src="img/logo.png" alt="Mason" /></a>
+        </div>
     </section>
     <!-- /.contact section -->
 
